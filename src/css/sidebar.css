@@ -1,0 +1,15 @@
+.sidebar{
+    width:8vw;
+    height: 100vh;
+    background-color: #343a40;
+    top:0;
+    position: absolute;
+    z-index: -11;
+}
+.nav{
+    margin-top: 10vh;
+}
+.nav li{
+    margin-bottom: 2.5vh;
+    font-size: 2.5vh;
+}

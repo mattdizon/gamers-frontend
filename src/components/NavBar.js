@@ -1,6 +1,6 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom'
-import {Navbar,Nav,Button} from 'react-bootstrap'
+import {Navbar,Nav,Button,Sidebar} from 'react-bootstrap'
 import '../css/nav.css'
 
 
@@ -10,8 +10,9 @@ class Navigation extends React.Component{
     render(){
 
         return (
+
             <Navbar expand="lg">
-                <Navbar.Brand href="#home" style = {{marginLeft: '5vh', color:"#fff"}}>Gamers</Navbar.Brand>
+                <Navbar.Brand href="#home" style = {{color:"#fff"}}><h1>Gamers</h1></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto" style = {{marginRight: '5vh'}}>
@@ -21,6 +22,8 @@ class Navigation extends React.Component{
 
                 </Navbar.Collapse>
             </Navbar>
+
+
         )
 }
 }
