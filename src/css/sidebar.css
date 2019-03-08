@@ -1,15 +1,25 @@
 .sidebar{
-    width:8vw;
+    width:15vw;
     height: 100vh;
     background-color: #1f2126;
     top:0;
     position: absolute;
-    z-index: -11;
 }
 .nav{
-    margin-top: 10vh;
+    padding-top: 15vh;
 }
 .nav li{
     margin-bottom: 2.5vh;
-    font-size: 2.5vh;
+
+}
+.nav-item a{
+    font-size: 2.0vw;
+    color:#fff;
+
+}
+.nav-item a:hover{
+    font-size: 2.0vw;
+    background-color: #A9A9A9;
+    width:15vw;
+    text-align: left;
 }

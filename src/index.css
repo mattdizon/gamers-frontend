@@ -8,9 +8,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow: none;
   background-color: #24272E;
+}::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.container{
+    margin-left: 20vw;
+    text-align: left;
+    margin-top: 7vh;
 }

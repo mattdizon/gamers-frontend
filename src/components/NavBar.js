@@ -16,8 +16,8 @@ class Navigation extends React.Component{
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto" style = {{marginRight: '5vh'}}>
-                        <Nav.Link href="#home">Sign In</Nav.Link>
-                        <Nav.Link href="#link">Sign Up</Nav.Link>
+                        <Button variant="light" style = {{marginRight:'2vw'}}>Sign In</Button>
+                        <Button variant="light" >Sign Up</Button>
                     </Nav>
 
                 </Navbar.Collapse>
