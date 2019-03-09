@@ -1,3 +1,30 @@
 .home-esports-container h1{
     font-size: 4.25vh;
 }
+.home-esports-container{
+
+
+}
+.home-esports-container-content{
+    display: inline-flex;
+    height:350px;
+    width:70vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+}
+.home-esports-container-content::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.home-esports-container-content::-webkit-scrollbar:horizontal {
+    height: 11px;
+}
+.home-esports-container-content::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, .5);
+}
+.home-esports-container-content::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 8px;
+}
