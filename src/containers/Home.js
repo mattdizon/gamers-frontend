@@ -17,7 +17,7 @@ class Home extends React.Component{
         return this.state.news.map(news => <HomeEsports article = {news.data}/>)
     }
     render(){
-
+        console.log(this.state.news)
         return (
             <div className = "home-esports-container">
                 <h1>Latest E-Sports News:</h1>
