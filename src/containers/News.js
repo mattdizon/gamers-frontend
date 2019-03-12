@@ -5,7 +5,8 @@ import '../css/news-container.css'
 class News extends React.Component{
     state = {
         news: [],
-        games:['---','League of Legends', 'Overwatch','Dota 2', 'CSGo','Hearthstone', 'Starcraft 2', 'Super Smash Bros']
+        games:['All','League of Legends', 'Overwatch','Dota 2', 'CSGo','Hearthstone', 'Starcraft 2', 'Super Smash Bros'],
+        selectedGame: ""
     }
     componentDidMount(){
         fetch('https://newsapi.org/v2/top-headlines?sources=polygon&apiKey=b252f4fed7984135a2823c31a50f3c74')
@@ -18,14 +19,20 @@ class News extends React.Component{
     renderEsports = () =>{
         return this.state.games.map(game => <option>{game}</option>)
     }
+    changeGame = (e) =>{
+        this.setState({selectedGame: e.target.value})
+
+    }
+
     render(){
         console.log(this.state.news)
         return(
             <div>
             <h1>Gamer News</h1>
-            <div class="form-group">
+            <br/>
+            <div class="form-group" >
                 <label for="sel1">Filter by Game</label>
-                <select className="form-control" style = {{width: '25vw'}}>
+                <select className="form-control" style = {{width: '25vw'}} value = {this.state.selectedGame} onChange = {(e) => this.changeGame(e)}>
                     {this.renderEsports()}
                 </select>
             </div>

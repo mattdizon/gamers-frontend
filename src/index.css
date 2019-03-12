@@ -17,7 +17,9 @@ code {
     monospace;
 }
 .container{
+    /* Fix margin to stop exceeding the top nav bar width */
     margin-left: 20vw;
     text-align: left;
     margin-top: 7vh;
+
 }
