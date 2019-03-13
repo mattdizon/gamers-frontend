@@ -3,7 +3,7 @@
     height: 100vh;
     background-color: #1f2126;
     top:0;
-    position: absolute;
+    position: fixed;
 }
 .nav{
     padding-top: 15vh;
