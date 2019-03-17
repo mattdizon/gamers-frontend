@@ -9,7 +9,7 @@ class News extends React.Component{
         selectedGame: ""
     }
     componentDidMount(){
-        fetch('https://newsapi.org/v2/top-headlines?sources=polygon&apiKey=b252f4fed7984135a2823c31a50f3c74')
+        fetch('https://newsapi.org/v2/top-headlines?sources=polygon&pageSize=9&apiKey=b252f4fed7984135a2823c31a50f3c74')
         .then(resp => resp.json())
         .then(news => this.setState({news:news.articles}))
     }
@@ -29,43 +29,43 @@ class News extends React.Component{
     renderFilteredGame = () =>{
         switch(this.state.selectedGame){
             case 'League of Legends':
-            fetch('https://newsapi.org/v2/everything?q="+league%20of%20legends"&apiKey=b252f4fed7984135a2823c31a50f3c74')
+            fetch('https://newsapi.org/v2/everything?q="+league%20of%20legends"&pageSize=9&apiKey=b252f4fed7984135a2823c31a50f3c74')
             .then(resp => resp.json())
             .then(news => this.setState({news:news.articles}))
                 break
             case 'Overwatch':
-            fetch('https://api.overwatchleague.com/news?page=69')
+            fetch('https://api.overwatchleague.com/news?pageSize=9')
             .then(resp => resp.json())
             .then(news => this.setState({news:news.blogs}))
                 break
             case 'Dota 2':
             case 'League of Legends':
-            fetch('https://newsapi.org/v2/everything?q="Dota+2"&apiKey=b252f4fed7984135a2823c31a50f3c74')
+            fetch('https://newsapi.org/v2/everything?q="Dota+2"&pageSize=9&apiKey=b252f4fed7984135a2823c31a50f3c74')
             .then(resp => resp.json())
             .then(news => this.setState({news:news.articles}))
                 break
             case 'CSGo':
-            fetch('https://newsapi.org/v2/everything?q="CS:Go"&apiKey=b252f4fed7984135a2823c31a50f3c74')
+            fetch('https://newsapi.org/v2/everything?q="CS:Go"&pageSize=9&apiKey=b252f4fed7984135a2823c31a50f3c74')
             .then(resp => resp.json())
             .then(news => this.setState({news:news.articles}))
                 break
             case 'Hearthstone':
-            fetch('https://newsapi.org/v2/everything?q="Hearthstone"&apiKey=b252f4fed7984135a2823c31a50f3c74')
+            fetch('https://newsapi.org/v2/everything?q="Hearthstone"&pageSize=9&apiKey=b252f4fed7984135a2823c31a50f3c74')
             .then(resp => resp.json())
             .then(news => this.setState({news:news.articles}))
                 break
             case 'Starcraft 2':
-            fetch('https://newsapi.org/v2/everything?q="Starcraft+2"&apiKey=b252f4fed7984135a2823c31a50f3c74')
+            fetch('https://newsapi.org/v2/everything?q="Starcraft+2"&pageSize=9&apiKey=b252f4fed7984135a2823c31a50f3c74')
             .then(resp => resp.json())
             .then(news => this.setState({news:news.articles}))
                 break
             case 'Super Smash Bros':
-            fetch('https://newsapi.org/v2/everything?q="Super+Smash+Bros"&apiKey=b252f4fed7984135a2823c31a50f3c74')
+            fetch('https://newsapi.org/v2/everything?q="Super+Smash+Bros"&pageSize=9&apiKey=b252f4fed7984135a2823c31a50f3c74')
             .then(resp => resp.json())
             .then(news => this.setState({news:news.articles}))
                 break
             default:
-            fetch('https://newsapi.org/v2/top-headlines?sources=polygon&apiKey=b252f4fed7984135a2823c31a50f3c74')
+            fetch('https://newsapi.org/v2/top-headlines?sources=polygon&pageSize=9&apiKey=b252f4fed7984135a2823c31a50f3c74')
             .then(resp => resp.json())
             .then(news => this.setState({news:news.articles}))
 
